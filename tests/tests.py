@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# author : caomingzhu
+# github : https://github.com/cmzhuzhu
+# description : FileToPics test
+
+
 import unittest
 from FileToPics import FileToPics
 
