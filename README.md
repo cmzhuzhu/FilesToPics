@@ -1,5 +1,5 @@
-# FilesToPics
-This Python package can turn file(ppt/pptx/doc/pdf..) into pictures
+Name
+    FileToPics
 
 Environment：
 
@@ -29,6 +29,10 @@ Environment：
     yum -y localinstall ImageMagick-libs-7.0.3-4.x86_64.rpm
     yum -y localinstall ImageMagick-7.0.3-4.x86_64.rpm
     yum -y localinstall ImageMagick-devel-7.0.3-4.x86_64.rpm
+    
+Use
+ 
+    pip install FileToPics
 
 
 SYNOPSIS
@@ -42,4 +46,17 @@ SYNOPSIS
     res = file2pics.file_to_pics()
 
 
+DESCRIPTION
+
+    This Python package can turn file(ppt/pptx/doc/pdf..) into pictures
+    
+    Params:
+
+    filepath : you want to operate the source file path
+    picpath  : Image storage path(In / at the end)
+    filetype : operate the source file type
+    pictype  : You want to generate the image format(default webp)
+
+    Notice:
+    params filepath and filetype does not match will be reported to the wrong
 
