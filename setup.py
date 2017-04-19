@@ -2,13 +2,13 @@ from setuptools import setup
 
 setup(
     name='FileToPics',
-    version='0.0.1',
+    version='0.0.5',
 
-    description='This Python package can turn file(ppt/pptx/doc/pdf..) into pictures',
+    description='This Python package can turn file(ppt/pptx/doc/docx/wps/pdf..) into pictures',
     long_description=open('README.md').read(),
     url='https://github.com/cmzhuzhu/FilesToPics',
-    author='Ren Peng',
-    author_email='cmzhuzhu123@gmail@gmail.com',
+    author='Cao Mingzhu',
+    author_email='cmzhuzhu123@gmail.com',
     license='MIT',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers

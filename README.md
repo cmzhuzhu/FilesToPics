@@ -1,8 +1,8 @@
 Name
 
-    FileToP :
+    FileToPics 
 
-Environment：
+Environment
 
     Java：
 
@@ -40,16 +40,16 @@ SYNOPSIS
 
     from FileToPics import FileToPics
 
-    file2pics = FileToPics(filepath = '/home/test.pdf', picpath = '/home/', filetype = 'pdf')
-    res = file2pics.file_to_pics()
+    file2pics = FileToPics(filePath = '/home/test.pdf', picPath = '/home/', fileType = 'pdf')
+    res = file2pics.fileToPicture()
 
-    file2pics = FileToPics(filepath = '/home/test.pptx', picpath = '/home/', filetype = 'ppt')
-    res = file2pics.file_to_pics()
+    file2pics = FileToPics(filePath = '/home/test.pptx', picPath = '/home/', fileType = 'ppt')
+    res = file2pics.fileToPicture()
 
 
 DESCRIPTION
 
-    This Python package can turn file(ppt/pptx/doc/pdf..) into pictures
+    This Python package can turn file(ppt/pptx/doc/docx/wps/pdf..) into pictures
     
     Params:
 

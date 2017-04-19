@@ -9,20 +9,20 @@ import unittest
 from FileToPics import FileToPics
 
 class TestSimple(unittest.TestCase):
-    def test_nonFilePathParameter(self):
-        file2pics     = FileToPics(picpath = '/home/test/', filetype = 'pdf')
-        resData       = file2pics.file_to_pics()
+    def testNonFilePathParameter(self):
+        file2pics     = FileToPics(picPath = '/home/test/', fileType = 'pdf')
+        resData       = file2pics.fileToPicture()
         self.assertEqual(resData, {'Code': 400, 'Message': 'the necessary params is not given'})
 
-    def test_pdfToPics(self):
-        file2pics     = FileToPics(filepath = '/home/test.pdf', picpath = '/home/test/', filetype = 'pdf')
-        resData       = file2pics.file_to_pics()
+    def testPdfToPics(self):
+        file2pics     = FileToPics(filePath = '/home/test.pdf', picPath = '/home/test/', fileType = 'pdf')
+        resData       = file2pics.fileToPicture()
 
         self.assertNotEqual(resData, None)
 
-    def test_fileToPics(self):
-        file2pics     = FileToPics(filepath = '/home/test.pptx', picpath = '/home/test/', filetype = 'pdf')
-        resData       = file2pics.file_to_pics()
+    def testFileToPictures(self):
+        file2pics     = FileToPics(filePath = '/home/test.pptx', picPath = '/home/test/', fileType = 'pptx')
+        resData       = file2pics.fileToPicture()
 
         self.assertNotEqual(resData, None)
 
