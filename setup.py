@@ -1,11 +1,15 @@
 from setuptools import setup
+import sys, os
+
+with open('README.rst', 'r') as f:
+    long_description = f.read()
 
 setup(
     name='FileToPics',
-    version='0.0.5',
+    version='0.0.6',
 
     description='This Python package can turn file(ppt/pptx/doc/docx/wps/pdf..) into pictures',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     url='https://github.com/cmzhuzhu/FilesToPics',
     author='Cao Mingzhu',
     author_email='cmzhuzhu123@gmail.com',
